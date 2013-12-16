@@ -1,4 +1,5 @@
 AvaruusAmmuskelu
 ================
 
-An epic game in space, AA
+AA is an amazing game about shooting and space.
+Your objective is to win
