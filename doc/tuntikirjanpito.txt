@@ -1,0 +1,7 @@
+Tuntikirjanpito:
+	Muoto:
+		pvm
+		aika:kohde
+
+16.12.2013
+16:30-17:45: Taistelua projektin alustuksen kanssa

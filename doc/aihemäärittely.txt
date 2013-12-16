@@ -1,0 +1,10 @@
+Aihe: Space shooter
+	Toteutan simppelin pelin mink‰ tarkoituksena on saada mahdollisimman paljon pisteit‰ ja pysy‰ mahdollisimman kauan hengiss‰ vaikeustason edetess‰.
+
+K‰ytt‰j‰t: Pelaajat
+
+Kaikkien k‰ytt‰jien toiminnot:
+	Voivat pelata peli‰
+	Voivat (ehk‰) vaihtaa asetuksia:
+		Vaikeus, v‰rit, resot, ‰‰net
+	
