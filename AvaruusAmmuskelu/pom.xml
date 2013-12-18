@@ -13,7 +13,14 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    
+    <repositories>
+        <repository>
+            <id>gdx-nightlies</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories> 
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -39,12 +46,12 @@
             <artifactId>lwjgl_util_applet</artifactId>
             <version>2.9.0</version>
         </dependency>
-        <!--slick-->
         <dependency>
-            <groupId>com.typesafe.slick</groupId>
-            <artifactId>slick_2.10</artifactId>
-            <version>1.0.1</version>
-        </dependency>
+ <groupid>com.badlogicgames.gdx</groupid>
+ <artifactid>gdx-platform</artifactid>
+ <version>${gdx.version}</version>
+ <classifier>natives-desktop</classifier>
+</dependency>
     </dependencies>
     
     <build>
@@ -67,19 +74,19 @@
                 <artifactId>pitest-maven</artifactId>
                 <version>0.30</version>
             </plugin>
-            <!--lwjglnatives-->
             <plugin>
                 <groupId>com.googlecode.mavennatives</groupId>
                 <artifactId>maven-nativedependencies-plugin</artifactId>
-                <version>0.0.5</version>
+                <version>0.0.7</version>
                 <executions>
                     <execution>
                         <id>unpacknatives</id>
-                        <phase>generate-resources</phase>
+                         <phase>generate-resources</phase>
                         <goals>
                             <goal>copy</goal>
                         </goals>
                     </execution>
+                   
                 </executions>
             </plugin>
         </plugins>
