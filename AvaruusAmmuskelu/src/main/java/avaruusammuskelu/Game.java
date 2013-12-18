@@ -1,18 +1,28 @@
 package avaruusammuskelu;
 
 import org.lwjgl.LWJGLException;
-import org.lwjgl.input.Keyboard;
-import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 
-class Game {
-
-    public Game() {
-    }
-
-    public void start() {
-        System.out.println("Wow, it worked");
-    }
-
+public class Game {
+	public void start() {
+		try {
+			Display.setDisplayMode(new DisplayMode(800,600));
+			Display.create();
+		} catch (LWJGLException e) {
+			e.printStackTrace();
+			System.exit(0);
+		}
+		
+		// init OpenGL here
+		
+		while (!Display.isCloseRequested()) {
+			
+			// render OpenGL here
+			
+			Display.update();
+		}
+		
+		Display.destroy();
+	}
 }
